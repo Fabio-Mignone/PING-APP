@@ -1,0 +1,26 @@
+﻿<Window x:Class="MignonePingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MignonePingApp"
+        mc:Ignorable="d"
+        Title="PING APP" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TxtPing" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Margin="280,10,0,0" Height="26" />
+        <Button x:Name="BtnPing" Content="Avvia il ping" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="119" Click="BtnPing_Click" Height="26" />
+        <Label Content="Inserisci un Indirizzo IP nella casella di testo ---&gt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265"/>
+        <Label x:Name="LblPacket" Content="" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top" Width="780"/>
+        <Label x:Name="LblRTT" Content="" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Width="780"/>
+        <GridSplitter HorizontalAlignment="Left" Height="1213" Margin="269,-557,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+    </Grid>
+</Window>
