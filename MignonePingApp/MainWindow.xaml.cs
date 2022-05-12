@@ -16,8 +16,8 @@ namespace MignonePingApp
         }
 
         private List<int> RTT = new List<int>();
+        private List<int> TTL = new List<int>();
         private List<bool> DATA = new List<bool>();
-
         private void BtnPing_Click(object sender, RoutedEventArgs e)
         {
             string address = TxtPing.Text;
@@ -29,8 +29,21 @@ namespace MignonePingApp
                 }
                 LblPacket.Content = TotalDataCalculation();
                 LblRTT.Content = TotalRoundTripTime();
+                LblStatuspack1.Content = "TTL: " + TTL[0];
+                LblStatuspack2.Content = "TTL: " + TTL[1];
+                LblStatuspack3.Content = "TTL: " + TTL[2];
+                LblStatuspack4.Content = "TTL: " + TTL[3];
+                LblStatus1.Content = "Pacchetto Ricevuto: " + DATA[0];
+                LblStatus2.Content = "Pacchetto Ricevuto: " + DATA[1];
+                LblStatus3.Content = "Pacchetto Ricevuto: " + DATA[2];
+                LblStatus4.Content = "Pacchetto Ricevuto: " + DATA[3];
+                LblRttsingle1.Content = "RTT: " + RTT[0];
+                LblRttsingle2.Content = "RTT: " + RTT[1];
+                LblRttsingle3.Content = "RTT: " + RTT[2];
+                LblRttsingle4.Content = "RTT: " + RTT[3];
                 DATA.Clear();
                 RTT.Clear();
+                TTL.Clear();
             }
             else
             {
@@ -70,6 +83,7 @@ namespace MignonePingApp
                     TempDataTransfer = true;
                     DATA.Add(TempDataTransfer);
                     RTT.Add((int)reply.RoundtripTime);
+                    TTL.Add(reply.Options.Ttl);
                 }
                 else if (reply.Status.ToString() == "DestinationHostUnreachable")
                 {
@@ -101,9 +115,7 @@ namespace MignonePingApp
                 }
             }
             percentuale = (dataok / dataok) * 100;
-            totaloutput = "pacchetti inviati: " + dataok +
-                          " pacchetti persi: " + dataloss +
-                          " Percentuale di successo: " + percentuale;
+            totaloutput = "pacchetti inviati: " + dataok + " / " + " pacchetti persi: " + dataloss + " / " + " Percentuale di successo: " + percentuale;
             return totaloutput;
         }
 
@@ -116,7 +128,7 @@ namespace MignonePingApp
             vmax = (RTT.Max());
             vmin = (RTT.Min());
             med = RTT.Sum() / 4;
-            totrtt = "RTT Massimo: " + vmax + " RTT Minimo: " + vmin + " RTT Medio: " + med; 
+            totrtt = "RTT Massimo: " + vmax + " / " + " RTT Minimo: " + vmin + " / " + " RTT Medio: " + med;
             return totrtt;
         }
     }
