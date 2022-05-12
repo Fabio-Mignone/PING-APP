@@ -56,10 +56,22 @@ namespace MignonePingApp
             bool retVal = false;
             try
             {
+                
                 IPAddress address;
-                retVal = IPAddress.TryParse(ipAddress, out address);
+                if (IPAddress.TryParse(ipAddress, out address))
+                {
+                    switch (address.AddressFamily)
+                    {
+                        case System.Net.Sockets.AddressFamily.InterNetwork:
+                            retVal = true;
+                            return retVal;
+                        case System.Net.Sockets.AddressFamily.InterNetworkV6:
+                            retVal = false;
+                            return retVal;
+                    }
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 retVal = false;
             }
