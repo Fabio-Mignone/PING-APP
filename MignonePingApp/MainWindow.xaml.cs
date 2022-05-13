@@ -18,14 +18,16 @@ namespace MignonePingApp
         private List<int> RTT = new List<int>();
         private List<int> TTL = new List<int>();
         private List<bool> DATA = new List<bool>();
+
         private void BtnPing_Click(object sender, RoutedEventArgs e)
         {
             string address = TxtPing.Text;
-            if (VerifyAddress(address) == true)
+            string realPing = VerifyAddress(address);
+            if (realPing != "ERRORE")
             {
                 for (int i = 0; i <= 3; i++)
                 {
-                    Ping(address);
+                    Ping(realPing);
                 }
                 LblPacket.Content = TotalDataCalculation();
                 LblRTT.Content = TotalRoundTripTime();
@@ -47,35 +49,21 @@ namespace MignonePingApp
             }
             else
             {
-                MessageBox.Show("ERRORE INSERIRE UN INDIRIZZO IP VALIDO");
+                MessageBox.Show("ERRORE INSERIRE UN INDIRIZZO IP O UN URL VALIDO");
             }
         }
 
-        public bool VerifyAddress(string ipAddress)
+        public string VerifyAddress(string ipAddress)
         {
-            bool retVal = false;
             try
             {
-                
-                IPAddress address;
-                if (IPAddress.TryParse(ipAddress, out address))
-                {
-                    switch (address.AddressFamily)
-                    {
-                        case System.Net.Sockets.AddressFamily.InterNetwork:
-                            retVal = true;
-                            return retVal;
-                        case System.Net.Sockets.AddressFamily.InterNetworkV6:
-                            retVal = false;
-                            return retVal;
-                    }
-                }
+                IPAddress[] addresses = Dns.GetHostAddresses(ipAddress);
+                return addresses[0].ToString();
             }
             catch (Exception)
             {
-                retVal = false;
+                return "ERRORE";
             }
-            return retVal;
         }
 
         public void Ping(string address)
