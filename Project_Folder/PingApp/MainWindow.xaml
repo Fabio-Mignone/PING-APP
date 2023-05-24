@@ -8,8 +8,8 @@
         Title="PING APP" Height="450" Width="756">
     <Grid>
         <TextBox x:Name="TxtPing" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Margin="280,10,0,0" Height="26" />
-        <Button x:Name="BtnPing" Content="Avvia il ping" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="119" Click="BtnPing_Click" Height="26" />
-        <Label Content="Inserisci un Indirizzo IP nella casella di testo ---&gt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265"/>
+        <Button x:Name="BtnPing" Content="Start Ping" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="119" Click="BtnPing_Click" Height="26" />
+        <Label Content="Enter an IP Address or URL in the text box ---&gt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265"/>
         <Label x:Name="LblPacket" Content="" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top" Width="736"/>
         <Label x:Name="LblRTT" Content="" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Width="736"/>
         <GridSplitter HorizontalAlignment="Left" Height="1213" Margin="269,-557,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
@@ -62,10 +62,10 @@
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
-        <Label Content="Primo Pacchetto:" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Secondo Pacchetto:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Terzo Pacchetto:" HorizontalAlignment="Left" Margin="390,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Quarto Pacchetto:" HorizontalAlignment="Left" Margin="580,144,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="First Packet:" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Second Packet:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Third Packet:" HorizontalAlignment="Left" Margin="390,144,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Fourth Packet:" HorizontalAlignment="Left" Margin="580,144,0,0" VerticalAlignment="Top" Width="170"/>
         <Label x:Name="LblStatuspack1" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
         <Label x:Name="LblStatuspack2" Content="" HorizontalAlignment="Left" Margin="200,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
         <Label x:Name="LblStatuspack3" Content="" HorizontalAlignment="Left" Margin="390,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
