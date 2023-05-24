@@ -6,7 +6,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Windows;
 
-namespace MignonePingApp
+namespace PingApp
 {
     public partial class MainWindow : Window
     {

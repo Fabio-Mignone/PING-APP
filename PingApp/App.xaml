@@ -1,7 +1,7 @@
-﻿<Application x:Class="MignonePingApp.App"
+﻿<Application x:Class="PingApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MignonePingApp"
+             xmlns:local="clr-namespace:PingApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
