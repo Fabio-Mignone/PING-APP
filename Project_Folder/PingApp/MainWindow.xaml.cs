@@ -1,7 +1,7 @@
 ﻿using PingApp.Logic;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using System.Windows.Input;
 
 namespace PingApp
 {
@@ -15,6 +15,8 @@ namespace PingApp
             InitializeComponent();
             pingManager = new PingManager();
             statisticsHelper = new StatisticsHelper();
+
+            TxtPing.KeyDown += TxtPing_KeyDown;
         }
 
         private async void BtnPing_Click(object sender, RoutedEventArgs e)
@@ -46,6 +48,14 @@ namespace PingApp
             else
             {
                 MessageBox.Show("ERROR: Please enter a valid IP address or URL.");
+            }
+        }
+
+        private void TxtPing_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                BtnPing_Click(sender, e);
             }
         }
     }
