@@ -9,74 +9,74 @@
     <Grid>
         <TextBox x:Name="TxtPing" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Margin="280,10,0,0" Height="26" />
         <Button x:Name="BtnPing" Content="Start Ping" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="119" Click="BtnPing_Click" Height="26" />
-        <Label Content="Enter an IP Address or URL in the text box ---&gt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265"/>
-        <Label x:Name="LblPacket" Content="" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top" Width="736"/>
-        <Label x:Name="LblRTT" Content="" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Width="736"/>
-        <GridSplitter HorizontalAlignment="Left" Height="1213" Margin="269,-557,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Enter an IP Address or URL in the text box ---&gt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265" />
+        <Label x:Name="LblPacket" Content="" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top" Width="736" />
+        <Label x:Name="LblRTT" Content="" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Width="736" />
+        <GridSplitter HorizontalAlignment="Left" Height="1089" Margin="207,-495,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="90" />
+                    <TranslateTransform />
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
-        <GridSplitter HorizontalAlignment="Left" Height="1372" Margin="189,-557,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+        <GridSplitter HorizontalAlignment="Left" Height="1248" Margin="127,-495,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleX="-1" />
+                    <SkewTransform />
+                    <RotateTransform Angle="90" />
+                    <TranslateTransform />
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
         <GridSplitter HorizontalAlignment="Left" Height="1372" Margin="185,130,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleX="-1" />
+                    <SkewTransform />
+                    <RotateTransform Angle="0" />
+                    <TranslateTransform />
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
         <GridSplitter HorizontalAlignment="Left" Height="1372" Margin="375,130,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleX="-1" />
+                    <SkewTransform />
+                    <RotateTransform Angle="0" />
+                    <TranslateTransform />
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
         <GridSplitter HorizontalAlignment="Left" Height="1372" Margin="565,130,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
+                    <ScaleTransform ScaleX="-1" />
+                    <SkewTransform />
+                    <RotateTransform Angle="0" />
+                    <TranslateTransform />
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
-        <Label Content="First Packet:" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Second Packet:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Third Packet:" HorizontalAlignment="Left" Margin="390,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Fourth Packet:" HorizontalAlignment="Left" Margin="580,144,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label x:Name="LblStatuspack1" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatuspack2" Content="" HorizontalAlignment="Left" Margin="200,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatuspack3" Content="" HorizontalAlignment="Left" Margin="390,210,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatuspack4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="170" Margin="580,210,0,0"/>
-        <Label x:Name="LblStatus1" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatus2" HorizontalAlignment="Left" Margin="200,175,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatus3" HorizontalAlignment="Left" Margin="385,175,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblStatus4" HorizontalAlignment="Left" Margin="580,175,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblRttsingle1" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblRttsingle2" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblRttsingle3" HorizontalAlignment="Left" Margin="390,245,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
-        <Label x:Name="LblRttsingle4" HorizontalAlignment="Left" Margin="580,245,0,0" VerticalAlignment="Top" Height="30" Width="170"/>
+        <Label Content="First Packet:" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="170" />
+        <Label Content="Second Packet:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" Width="170" />
+        <Label Content="Third Packet:" HorizontalAlignment="Left" Margin="390,144,0,0" VerticalAlignment="Top" Width="170" />
+        <Label Content="Fourth Packet:" HorizontalAlignment="Left" Margin="580,144,0,0" VerticalAlignment="Top" Width="170" />
+        <Label x:Name="LblStatuspack1" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatuspack2" Content="" HorizontalAlignment="Left" Margin="200,210,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatuspack3" Content="" HorizontalAlignment="Left" Margin="390,210,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatuspack4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="170" Margin="580,210,0,0" />
+        <Label x:Name="LblStatus1" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatus2" HorizontalAlignment="Left" Margin="200,175,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatus3" HorizontalAlignment="Left" Margin="385,175,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblStatus4" HorizontalAlignment="Left" Margin="580,175,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblRttsingle1" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblRttsingle2" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblRttsingle3" HorizontalAlignment="Left" Margin="390,245,0,0" VerticalAlignment="Top" Height="30" Width="170" />
+        <Label x:Name="LblRttsingle4" HorizontalAlignment="Left" Margin="580,245,0,0" VerticalAlignment="Top" Height="30" Width="170" />
     </Grid>
 </Window>
