@@ -33,7 +33,7 @@ jobs:
         languages: ${{ matrix.language }}
 
     - name: Build
-      run: msbuild YourProject.sln /t:Rebuild /p:Configuration=Release
+      run: dotnet build YourProject.sln --configuration Release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
