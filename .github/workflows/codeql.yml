@@ -33,7 +33,7 @@ jobs:
         languages: ${{ matrix.language }}
 
     - name: Build
-      run: dotnet build YourProject.sln --configuration Release
+      run: dotnet build PingApp.sln --configuration Release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
