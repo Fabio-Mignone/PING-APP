@@ -94,4 +94,4 @@ Distributed under the GPL-3.0 License. See [LICENSE](https://github.com/Fabio-Mi
 
 ## Authors
 
-* **Mignone Fabio** - *Computer Science Student* - [Mignone Fabio](https://github.com/Fabio-Mignone)
+* **Mignone Fabio** - *Passionate Developer* - [Mignone Fabio](https://github.com/Fabio-Mignone)
